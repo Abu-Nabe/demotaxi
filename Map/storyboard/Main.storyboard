@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Gh-qv-bJ9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="i99-YO-tft">
+            <objects>
+                <tabBarController id="1Gh-qv-bJ9" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="StK-md-xWO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vWd-Ls-TIa" kind="relationship" relationship="viewControllers" id="yYm-tu-1sq"/>
+                        <segue destination="tea-WF-3DF" kind="relationship" relationship="viewControllers" id="RBF-yW-riw"/>
+                        <segue destination="ke8-pK-Jzf" kind="relationship" relationship="viewControllers" id="PQt-RK-I3L"/>
+                        <segue destination="VjH-j1-zNU" kind="relationship" relationship="viewControllers" id="cAe-mG-Cg5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aca-r7-XEF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1138" y="-71"/>
+        </scene>
+        <!--Taxi-->
+        <scene sceneID="bNQ-3Q-WOC">
+            <objects>
+                <viewController storyboardIdentifier="Taxi" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vWd-Ls-TIa" customClass="Taxi" customModule="Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9eq-qU-HoG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6br-22-k8A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Taxi" image="car.fill" catalog="system" id="3aO-dy-Zm3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMW-mT-4D0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2194" y="616"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Wb5-3O-rF3">
+            <objects>
+                <viewController storyboardIdentifier="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VjH-j1-zNU" customClass="Profile" customModule="Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GCJ-m1-9HX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mvg-rv-u0K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="FwB-My-ydZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJU-nq-OaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="603"/>
+        </scene>
+        <!--Arrival-->
+        <scene sceneID="pru-gY-ulx">
+            <objects>
+                <viewController storyboardIdentifier="Arrival" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ke8-pK-Jzf" customClass="Arrival" customModule="Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gBf-FU-SJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9xk-yI-BwP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Arrival" image="timelapse" catalog="system" id="HYE-eg-Dpd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTY-Gc-avP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-704" y="603"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="Una-3Y-LZt">
+            <objects>
+                <viewController storyboardIdentifier="Message" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tea-WF-3DF" customClass="Message" customModule="Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ksu-fq-0gy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9ek-MV-fKT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Message" image="bubble.right.fill" catalog="system" id="7qR-Gm-PAp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSK-Jl-t62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1441" y="603"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubble.right.fill" catalog="system" width="128" height="110"/>
+        <image name="car.fill" catalog="system" width="128" height="93"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="timelapse" catalog="system" width="128" height="122"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
